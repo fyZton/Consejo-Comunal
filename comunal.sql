@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-04-2024 a las 04:23:49
+-- Tiempo de generación: 24-04-2024 a las 00:37:33
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -43,7 +43,8 @@ CREATE TABLE `casas` (
   `idCasa` int(11) NOT NULL,
   `direccion` varchar(255) NOT NULL,
   `color` varchar(50) NOT NULL,
-  `idManzana` int(11) NOT NULL
+  `idManzana` int(11) NOT NULL,
+  `numeroCasa` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 -- --------------------------------------------------------
@@ -95,7 +96,8 @@ CREATE TABLE `personas` (
   `apellido` varchar(50) NOT NULL,
   `cedula` varchar(10) NOT NULL,
   `fechaNacimiento` date NOT NULL,
-  `idComunidad` int(11) NOT NULL
+  `idComunidad` int(11) NOT NULL,
+  `sexo` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 -- --------------------------------------------------------
